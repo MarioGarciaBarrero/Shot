@@ -87,7 +87,7 @@
 }
 .cuerpo .cabecera .productos {
 	background-color: #2E2E2E;
-	height: 750px;
+	height: 669px;
 	margin-top: -20px;
 }
 .cabecera .productos div {
@@ -96,7 +96,7 @@
 	padding-right: 66px;
 	padding-bottom: 66px;
 	float: left;
-	width: 100%;
+	width: 60%;
 }
 .cabecera .productos p {
 	float: right;
@@ -108,7 +108,8 @@
 .cuerpo .cabecera .masinfo {
 	text-shadow: 0px 0px #FFFFFF;
 	background-color: #000000;
-	height: 70px;
+	height: 127px;
+	padding-top: 46px;
 }
 .cabecera .masinfo img {
 	float: left;
@@ -124,7 +125,6 @@
 	font-size: x-large;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	margin-top: 18px;
 }
 .cabecera .logo img {
 	width: 829px;
@@ -169,12 +169,29 @@
 .productos div .compra {
 	width: 98px;
 	height: 31px;
-	margin-left: 100px;
 	margin-right: -601px;
 	margin-top: 308px;
+	padding-right: 0px;
+	margin-left: 100px;
 }
 .productos div .Descripción {
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#radio2 {
+}
+.productos #form1 p1 {
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+.cabecera .productos #form1 {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+td label strong1 {
+	color: #FFFFFF;
+}
+.cabecera .productos #form1 {
+	color: #FFFFFF;
 }
 </style>
 <link href="Estilo.css" rel="stylesheet" type="text/css" media="screen">
@@ -204,21 +221,56 @@ body {
       <p><a href="index.html">INICIO</a><a href="Camisetas.html">CAMISETA</a><a href="Pantalón.htm">PANTALONES</a><a href="Sudaderas.html">SUDADERAS</a><a href="Gorras.html">GORRAS</a><a href="Accesorios.html">ACCESORIOS</a></p>
     </div>
 <div class="productos">
-<div>
-  <p>Gorro White VHI Original</p>
-  <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 11,99€ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
-  <p class="Descripción">Precio mínimo autorizado garantizado. </p>
-<p class="Descripción">Todos nuestros productos son 100% originales. </p>
-<p class="Descripción">Envío urgente en 24h. Cambio gratuito.</p>
-<p class="Descripción"> Pago seguro con tarjeta o contra reembolso. </p>
-<p class="Descripción2">Opina sobre el producto. </p>
-<img src="gorro.jpg" alt="" width="500" height="500" class="rounded"/><img src="Compraya.png" alt="" width="461" height="103" class="compra"/></div>
+<form action="cvgruby008@gmail.com" method="post" name="form1" id="form1">
+<table width="80%" border="1" align="center">
+  <tbody>
+      <tr>
+        <td height="58"><label for="mail"><strong>Dirección de Correo Electrónico:</strong></label></td>
+        <td><input name="mail" type="text" id="mail" value="E-mail" size="30" maxlength="30"></td>
+      </tr>
+      <tr>
+        <td height="56"><strong>Nombre</strong><br></td>
+        <td><input type="text" name="textfield" id="textfield"></td>
+      </tr>
+      <tr>
+        <td height="54"><strong>¿Has realizado alguna compra previamente?</strong></td>
+        <td><input name="checkbox" type="checkbox" id="checkbox"></td>
+      </tr>
+      <tr>
+        <td height="60"><label for="compra"><strong>¿Tienes cuenta en nuestra web?
+          
+        </strong></label></td>
+        <td><input name="compra" type="radio" id="radio2" value="info_si" checked="checked">
+        Si
+          <strong>
+          <input name="compra" type="radio" id="radio2" value="info_no" checked="checked">
+        No</strong></td>
+      </tr>
+      <tr>
+        <td height="35"><strong>Motivo de la consulta</strong></td>
+        <td><select name="select" multiple="MULTIPLE" id="select">
+          <option>Problema de tallaje</option>
+          <option>Mi pedido no ha llegado</option>
+          <option>Problemas de pago</option>
+          <option>Dudas acerca de un producto</option>
+          <option>Defectos</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td height="157"><strong>Desarrolle su consulta</strong></td>
+        <td><textarea name="textarea" cols="50" rows="10" wrap="soft" id="textarea" form="form1"></textarea></td>
+      </tr>
+    </tbody>
+</table>
+<p1>
+  <a href="https://twitter.com/Shot87355005"><img href="https://twitter.com/Shot87355005" src="output-onlinepngtools (43).png" width="127" height="68" alt=""></a><a href="https://www.facebook.com/ShotClothes"><img href="https://www.facebook.com/ShotClothes" src="f_logo_RGB-Hex-Blue_512.png" width="79" height="74" alt=""></a>
+  <input name="b_envio" type="submit" autofocus="autofocus" id="b_envio" formaction="mailto:mariusco13@gmail.com" value="Enviar">
+</p1>
+</form>
 </div>
 <div class="masinfo">
 	    <img src="Logo_1 (1).png" width="289" height="143" alt=""/>
-	   	<a href="formulario.html">Contact us</a>
-		<a href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
-		<a href="https://twitter.com/Shot87355005">Redes sociales</a>
+	   	<a href= "preguntasfrecuentes.html">Preguntas frecuentes</a>
 	    <a href="https://goo.gl/maps/NaRNdaXkDUx55iMQ9">Site map</a>
 	</div> 
 </header>

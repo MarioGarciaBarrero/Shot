@@ -107,7 +107,7 @@
 }
 .cabecera .masinfo img {
 	float: left;
-	margin-top: -80px;
+	margin-top: -38px;
 	margin-left: -50px;
 }
 .cabecera contact {
@@ -121,7 +121,8 @@
 	font-size: x-large;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	margin-top: -15px;
+	margin-top: 15px;
+	margin-left: -28px;
 }
 .cabecera .logo img {
 	width: 656px;
@@ -147,10 +148,55 @@
 	height: 300px;
 	width: 827px;
 }
+.cuerpo .cabecera p {
+	color: #FF0206;
+	background-color: #000000;
+}
+.productos .p1 .r1 {
+	padding-top: 0px;
+	color: #229C4E;
+}
+.productos .p2 .r2 {
+	color: #229C4E;
+}
+.cabecera .productos .p4 {
+	color: #FFFFFF;
+	margin-top: 69px;
+}
+.productos .p5 .r5 {
+	color: #229C4E;
+}
+.cabecera .productos .p5 {
+	color: #FFFFFF;
+	margin-top: 68px;
+}
+.cabecera .productos .p1 {
+	color: #FFFFFF;
+	margin-top: 43px;
+}
+.cabecera .productos .p3 {
+	color: #FFFFFF;
+	padding-top: 53px;
+}
+.productos .p3 .r3 {
+	color: #229C4E;
+}
+.cabecera .productos .p2 {
+	color: #FFFFFF;
+	margin-top: 51px;
+}
+.productos .p4 .r4 {
+	color: #229C4E;
+}
+.cabecera .productos .preguntas {
+	color: #FFFFFF;
+	font-size: x-large;
+}
 </style>
 <link href="Estilo.css" rel="stylesheet" type="text/css" media="screen">
 <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.slider.min.css" rel="stylesheet" type="text/css">
 <link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 body {
@@ -160,11 +206,16 @@ body {
 </style>
 <!-- <script src="file:///C|/Users/r.ortega.2019/AppData/Roaming/Adobe/Dreamweaver CC 2018/es_ES/Configuration/Temp/Assets/eamED1D.tmp/jquery-1.11.1.min.js"></script> -->
 <script src="js/jquery-3.2.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.slider.min.js"></script>
 </head>
 
-<body> 
+<body>
 <center><div class="cuerpo">
   <header class="cabecera">
+	  <p>ATENCIÓN: Esta página simula una campaña de crowdfunding de un
+proyecto y no representa un producto real.
+Práctica de Multimedia, 1º GDDV - Curso 19/20 (Móstoles), URJC.
+La URJC no se hace responsable del contenido expuesto por el autor.</p>
     <div class="logo"><img src="Logobueno.png" width="579" height="286" alt=""/></div>
     <div class="Carrito">
       <div class="Usuario"><img class="imagen" src="agenda.png"/>Sign in/ Sign up</div>
@@ -174,25 +225,63 @@ body {
     <div class="menu">
       <p><a href="index.html">INICIO</a><a href="Camisetas.html">CAMISETA</a><a href="Pantalón.htm">PANTALONES</a><a href="Sudaderas.html">SUDADERAS</a><a href="Gorras.html">GORRAS</a><a href="Accesorios.html">ACCESORIOS</a></p>
     </div>
-<section class="Slider"> </section>
-<div class="productos">
-	    <div><a href="Producto_pantalón.html"><img src="pantalones.jpg" width="200" height="200" alt=""></a><p>Pantalones Drak</p>Precio 40€</div>
-		<div><img src="pantalones2.jpg" width="113" height="200" alt=""/><p>Pantalones cuadros</p>Cooming soon</div>
-		<div><img src="pantalones3.jpg" width="200" height="200" alt=""/><p>Jeans rotos</p>Cooming soon</div>
-		<div><img src="pantalones 4.jpg" width="200" height="200" alt=""/><p>Pantalones con cremallera</p>Cooming soon</div>
-		<div><img src="pantalones5.jpg" width="180" height="200" alt=""/><p>Pantalones negro y rojo</p>Cooming soon</div>
-		<div><img src="pantalones6.jpg" width="200" height="200" alt=""/><p>Pantalones beige</p>Cooming soon</div>
+<section class="Slider">
+  <div id="Slider1">
+    <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: grey">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active"> <img class="d-block mx-auto" src="gorra2.jpg" alt="First slide">
+          <div class="carousel-caption">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item"> <img class="d-block mx-auto" src="sudadera.jpg" alt="Second slide">
+          <div class="carousel-caption">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item"> <img class="d-block mx-auto" src="chaqueta.jpg" alt="Third slide">
+          <div class="carousel-caption">
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+  </div>
+</section>
+	<div class="detrasslid"></div>  
+	<div class="productos">
+<p  class="preguntas"></p>
+<a  class="preguntas">PREGUNTAS FRECUENTES:</a>
+<p class="p1">¿Los envios llegaran a todo el mundo?
+		  <a  class="r1"> Sí, llegaran a todo el mundo aunque los gastos de envío podrían variar dependiendo de la distancia del envío.</a></p>
+	  <p class="p2">¿Habrá tallas grandes? <a  class="r2"> No lo sabemos aún, todo dependerá de el numero de peticiones de tallas grandes que recibamos.</a></p>
+	  <p class="p3">¿El estilo de la ropa será solamente callejera? <a  class="r3">En principio si, pero no descartamos ampliarlo en un futuro.</a></p>
+	  <p class="p4">¿Que distintas formas de pago habrá? <a  class="r4">Tarjeta de credito, paypal, apple pay y samsung pay.</a></p>
+	  <p class="p5">¿Cual será la duración de los envios? <a  class="r5">Los envios dependerán de la empresa de transporte contratada</a></p> 
 	</div> 
 	<div class="masinfo">
 	    <img src="Logo_1 (1).png" width="289" height="143" alt=""/>
 	   	<a href="formulario.html">Contact us</a>
-		<a href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
-		<a href="https://twitter.com/Shot87355005">Redes sociales</a>
 	    <a href="https://goo.gl/maps/NaRNdaXkDUx55iMQ9">Site map</a>
+		<a href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
+        <a href="https://twitter.com/Shot87355005">Redes sociales</a>
 	</div> 
 </header>
 </div></center>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.0.0.js"></script>
+<script type="text/javascript">
+$(function() {
+	$( "#Slider1" ).slider(); 
+});
+</script>
 </body>
 </html>
